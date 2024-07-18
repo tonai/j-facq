@@ -14,7 +14,7 @@
 			<div id="menu">
 				<ul>
 					<li><a href="index.php" style="border-right: 1px solid #3b3830;">Accueil</a></li>
-					<li><a href="#" style="background-position: -100px 0px; color: white;">Présentation</a></li>
+					<li><a href="#" style="background-position: -100px 0px; color: white;">PrÃ©sentation</a></li>
 					<li><a href="galerie.php" style="border-right: 1px solid #3b3830;">Galerie</a></li>
 					<li><a href="contact.php" style="border-right: 1px solid #3b3830;">Contact</a></li>
 				</ul>

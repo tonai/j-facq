@@ -25,60 +25,56 @@
 	$j=0;
 	while ($file=readdir($dossier))
 	{
-		if ($i>=2)
-		{
-			$n=strlen($file)-10;
-			$extension_petit=substr($file, $n, 10);
-			$fin=strlen($file)-4;
-			$extension=substr($file, $fin, 4);
-			
-			if ($extension==".jpg")
-			{
-				if (!isset($src[$j]))
-					$src[$j]="";
-				if (!isset($src_petit[$j]))
-					$src_petit[$j]="";
-				if ($extension_petit=="_petit.jpg")
-				{
-					$existe=0;
-					for ($k=0;$k<$j;$k++)
-					{
-						$titre=substr($file, 0, $n);
-						if ($src[$k]==$titre)
-						{
-							$src_petit[$k]=$titre;
-							$existe=1;
-						}
-					}
-					if ($existe==0)
-					{
-						$titre=substr($file, 0, $n);
-						$src_petit[$j]=$titre;
-						$j++;
-					}
-				}
-				else
-				{
-					$existe=0;
-					for ($k=0;$k<$j;$k++)
-					{
-						$titre=substr($file, 0, $fin);
-						if ($src_petit[$k]==$titre)
-						{
-							$src[$k]=$titre;
-							$existe=1;
-						}
-					}
-					if ($existe==0)
-					{
-						$titre=substr($file, 0, $fin);
-						$src[$j]=$titre;
-						$j++;
-					}
-				}
-			}
-		}
-		$i++;
+    $n=strlen($file)-10;
+    $extension_petit=substr($file, $n, 10);
+    $fin=strlen($file)-4;
+    $extension=substr($file, $fin, 4);
+    
+    if ($extension==".jpg")
+    {
+      if (!isset($src[$j]))
+        $src[$j]="";
+      if (!isset($src_petit[$j]))
+        $src_petit[$j]="";
+      if ($extension_petit=="_petit.jpg")
+      {
+        $existe=0;
+        for ($k=0;$k<$j;$k++)
+        {
+          $titre=substr($file, 0, $n);
+          if ($src[$k]==$titre)
+          {
+            $src_petit[$k]=$titre;
+            $existe=1;
+          }
+        }
+        if ($existe==0)
+        {
+          $titre=substr($file, 0, $n);
+          $src_petit[$j]=$titre;
+          $j++;
+        }
+      }
+      else
+      {
+        $existe=0;
+        for ($k=0;$k<$j;$k++)
+        {
+          $titre=substr($file, 0, $fin);
+          if ($src_petit[$k]==$titre)
+          {
+            $src[$k]=$titre;
+            $existe=1;
+          }
+        }
+        if ($existe==0)
+        {
+          $titre=substr($file, 0, $fin);
+          $src[$j]=$titre;
+          $j++;
+        }
+      }
+    }
 	}
 	closedir($dossier);
 	
@@ -196,7 +192,7 @@
 			<div id="menu">
 				<ul>
 					<li><a href="index.php">Accueil</a></li>
-					<li><a href="presentation.php">Pr�sentation</a></li>
+					<li><a href="presentation.php">Présentation</a></li>
 					<li><a href="galerie.php">Galerie</a></li>
 					<li><a href="contact.php">Contact</a></li>
 				</ul>
