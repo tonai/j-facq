@@ -1,0 +1,370 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+ol
+{
+	margin-bottom: 20px;
+}
+
+	ol li
+	{
+		margin-left: 40px;
+	}
+
+a
+{
+	text-decoration: none;
+	color: #989079;
+}
+
+a:hover
+{
+	color: white;
+}
+
+a:focus, a:active
+{
+	outline: none;
+}
+
+h1
+{
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+p
+{
+	margin-bottom: 20px;
+}
+
+.left
+{
+	float: left;
+}
+
+.right
+{
+	float: right;
+}
+
+.clear
+{
+	clear: both;
+}
+
+.erreur
+{
+	color: red;
+}
+
+body
+{
+	background-color: #3b3830;
+	width: 1120px;
+	margin: auto;
+}
+
+	body #admin
+	{
+		width: 1040px;
+		margin-left: 40px;
+		min-height: 200px;
+		margin-top: 20px;
+		background-color: #716541;
+		text-align: center;
+	}
+		
+		body #admin #menu
+		{
+			width: 1040px;
+			background-color: #716541;
+		}
+		
+			body #admin #menu ul li
+			{
+				display: block;
+				width: 519px;
+				height: 34px;
+				padding-top: 15px;
+			}
+			
+				body #admin #menu ul #ajouter
+				{
+					border-right: 1px solid #3b3830;
+					background-image: url("menu_onglet_admin1.jpg");
+					float: left;
+				}
+				
+				body #admin #menu ul #supprimer
+				{
+					border-left: 1px solid #3b3830;
+					background-image: url("menu_onglet_admin2.jpg");
+					float: right;
+				}
+		
+		body #admin #conventions
+		{
+			width: 960px;
+			text-align: justify;
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+		
+		body #admin form
+		{
+			padding: 0px 20px 20px 20px;
+		}
+		
+			body #admin form #ajout
+			{
+				margin: auto;
+				width: 400px;
+				color: #989079;
+				background-color: #3b3830;
+				margin-bottom: 20px;
+				border: 1px solid black;
+			}
+			
+				body #admin form #ajout div
+				{
+					border-bottom: 1px solid black;
+				}
+				
+				body #admin form #ajout p
+				{
+					padding-top: 10px;
+				}
+		
+			body #admin form table
+			{
+				width: 480px;
+				border-collapse: collapse;
+				border: 1px solid black;
+				background-color: #3b3830;
+				margin-bottom: 20px;
+			}
+			
+				body #admin form table caption
+				{
+					color: #989079;
+					background-color: #3b3830;
+					border: 1px solid black;
+				}
+				
+					body #admin form table tr td
+					{
+						border: 1px solid black;
+					}
+		
+		body #admin #footer
+		{
+			width: 1000px;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 5px;
+			height: 20px;
+			font-size: 80%;
+			background-color: #4f472d;
+			text-align: justify;
+		}
+	
+	body #accueil
+	{
+		width: 1040px;
+		height: 360px;
+		margin-top: 100px;
+		background-color: #716541;
+		padding: 40px;
+		text-align: center;
+	}
+	
+		body #accueil #corps
+		{
+			width: 360px;
+			height: 360px;
+			float: left;
+			font-family: "Times New Roman", Arial, Verdana, serif;
+			font-variant: small-caps;
+			background-color: #3b3830;
+			color: #989079;
+			font-weight: bold;
+		}
+		
+			body #accueil #corps hr
+			{
+				color: #989079;
+				background-color: #989079;
+			}
+			
+			body #accueil #corps #johan
+			{
+				font-size: 630%;
+			}
+			
+			body #accueil #corps #facq
+			{
+				font-size: 620%;
+			}
+			
+			body #accueil #corps #fonction
+			{
+				font-size: 40px;
+			}
+		
+		body #accueil #diaporama
+		{
+			height: 360px;
+			width: 360px;
+			float: right;
+			background-color: black;
+		}
+	
+		body #accueil #menu
+		{
+			width: 240px;
+			height: 360px;
+			margin-left: 400px;
+			background-color: #3b3830;
+			border-top: 1px solid #3b3830;
+		}
+		
+			body #accueil #menu ul li
+			{
+				text-align: center;
+			}
+			
+				body #accueil #menu ul li a
+				{
+					display: block;
+					height: 60px;
+					padding-top: 10px;
+					margin: 10px 10px 20px 10px;
+					color: #989079;
+					font-size: 250%;
+					font-weight: bold;
+				}
+				
+				body #accueil #menu ul li a:hover
+				{
+					background-color: #989079;
+					color: white;
+			}
+			
+	body #footer
+	{
+		clear: both;
+		width: 1080px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 5px;
+		height: 20px;
+		font-size: 80%;
+		background-color: #4f472d;
+	}
+		
+	body #main
+	{
+		width: 1040px;
+		height: 500px;
+		margin-top: 100px;
+	}
+	
+		body #main #menu
+		{
+			width: 100px;
+			float: left;
+			text-align: center;
+			background-color: #716541;
+		}
+			
+			body #main #menu ul li a
+			{
+				display: block;
+				height: 34px;
+				padding-top: 15px;
+				border-bottom: 1px solid #3b3830;
+				background-image: url("menu_onglet.jpg");
+			}
+			
+			body #main #menu ul li:first-child a
+			{
+				background-image: url("menu_onglet2.jpg");
+			}
+			
+		body #main #corps
+		{
+			width: 900px;
+			min-height: 200px;
+			padding: 20px;
+			margin-left: 100px;
+			margin-bottom: 20px;
+			background-color: #716541;
+		}
+		
+			body #main #corps #left
+			{
+				display: block;
+				width: 30px;
+				height: 30px;
+				margin-top: 90px;
+				background-image: url('boutongauche.jpg');
+				float: left;
+			}
+			
+			body #main #corps #left:hover
+			{
+				background-position: 0px -30px;
+			}
+			
+			body #main #corps #right
+			{
+				display: block;
+				width: 30px;
+				height: 30px;
+				margin-top: 90px;
+				background-image: url('boutondroite.jpg');
+				float: right;
+			}
+			
+			body #main #corps #right:hover
+			{
+				background-position: 0px -30px;
+			}
+			
+			body #main #corps #miniature
+			{
+				text-align: center;
+				margin-left: 40px;
+				margin-right: 10px;
+				width: 800px;
+				height: 200px;
+				background-color: #3b3830;
+				padding: 10px;
+			}
+			
+				body #main #corps #miniature table
+				{
+					width: 800px;
+					height: 200px;
+					border-collapse: collapse;
+				}
+					
+					body #main #corps #miniature table tr td
+					{
+						width: 100px;
+					}
+			
+			body #main #corps #maxi
+			{
+				margin-top: 30px;
+			}
